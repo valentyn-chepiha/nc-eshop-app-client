@@ -13,13 +13,11 @@ public class LoadService {
     public static String load(String url) {
         String result = "";
         try {
-            //Open the URLConnection for reading
             URL u = new URL(url);
             URLConnection uc = u.openConnection();
             InputStream raw = uc.getInputStream();
             InputStream buffer = new BufferedInputStream(raw);
 
-            // chain the InputStream to a Reader
             Reader r = new InputStreamReader(buffer);
             int c;
             StringBuilder stringBuilder = new StringBuilder();

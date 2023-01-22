@@ -12,11 +12,6 @@ import java.io.StringReader;
 @Service
 public class EngineTransformationXMLUseJaxb<T> {
 
-//        logger.msgDebug("convert :: start....");
-//        logger.msgDebug("convert :: data length - " + dataXML.length());
-//        logger.msgDebug("convert :: data - " + dataXML);
-//        logger.msgDebug("ConvertUseJaxbXMLToObject.convert :: empty result - " + entity);
-
     @SneakyThrows
     public T start(String dataXML, JAXBContext jaxbContext) {
         XMLInputFactory xif = XMLInputFactory.newFactory();
